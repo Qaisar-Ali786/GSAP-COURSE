@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1b1b1b;
+}
+.sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #292929;
+  transition: 1s ease;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 50px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 2px;
+}
+a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.hide {
+  transform: translateX(-260px);
+}
+
+.btn:active {
+  transform: scale(0.5);
+}
